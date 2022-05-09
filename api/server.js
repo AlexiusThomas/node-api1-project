@@ -1,3 +1,10 @@
 // BUILD YOUR SERVER HERE
+const express = require('express');
 
-module.exports = {}; // EXPORT YOUR SERVER instead of {}
+const server = express();
+
+server.listen(9000, () => {
+    console.log('server is now running');
+});
+
+module.exports = server; // EXPORT YOUR SERVER instead of {}
